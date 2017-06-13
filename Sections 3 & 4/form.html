@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <!-- <form action="http://wikipedia.org">
+      <label>Username:
+        <input name="username" type="text" placeholder="username"></label>
+      <label>Password:
+        <input name="password" type="password" placeholder="password"></label>
+      <input type="submit">
+    </form> -->
+    <form action="http://wikipedia.org">
+      <label for="username">Email:</label>
+        <input id="username" name="username" type="email" placeholder="username" required>
+      <label for="password">Password:</label>
+        <input id="password" name="password" type="password" placeholder="password" required>
+      <input type="submit">
+    </form>
+
+    <p>Do you prefer kut or doggo?</p>
+    <form method="get">
+      <label for="dog">Dog</label>
+      <input id="dog" type="radio" name="PetChoice" value="dog">
+      <label for="cat">Cat</label>
+      <input id="cat" type="radio" name="PetChoice" value="cat">
+      <p>Mood?</p>
+      <select name="mood">
+        <option value="happy">:)</option>
+        <option value="Neutral">:|</option>
+        <option value="Sad">:(</option>
+      </select>
+
+      <textarea name="paragraph" rows="10" cols="10"></textarea>
+
+      <button >Go</button>
+    </form>
+
+
+  </body>
+</html>
