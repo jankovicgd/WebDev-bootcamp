@@ -1,0 +1,21 @@
+h1 {
+  color: rgb(0, 255, 100);
+  border-color: purple;
+  border-width: 5px;
+  border-style: dashed;
+}
+
+li {
+  color: green;
+}
+
+h4 {
+  color: purple;
+}
+
+body{
+  background: pink;
+  /*background: url(https://image.freepik.com/free-vector/wood-texture_1083-21.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}

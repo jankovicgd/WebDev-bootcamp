@@ -1,0 +1,11 @@
+li {
+  border: 2px solid red;
+}
+
+#walk {
+  background-color: yellow;
+}
+
+.completed {
+  text-decoration: line-through;
+}
