@@ -1,6 +1,6 @@
 var answer = prompt("Are we there yet?")
 
-while(answer !== "yes"){
+while(!answer.indexOf("yes")){
   var answer = prompt("Are we there yet?")
 }
 
