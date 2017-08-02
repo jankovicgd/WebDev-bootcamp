@@ -1,3 +1,4 @@
 bootstrap-3.3.7-dist/
 bootstrap.css
-lib/
+jquery-3.2.1.js
+jquery-3.2.1.min.js
