@@ -1,9 +1,10 @@
-var express       = require('express'),
-    passport      = require("passport"),
-    mongoose      = require('mongoose'),
-    bodyParser    = require('body-parser'),
-    LocalStrategy = require("passport-local"),
-    seedDB        = require("./seeds");
+var express        = require('express'),
+    passport       = require("passport"),
+    mongoose       = require('mongoose'),
+    bodyParser     = require('body-parser'),
+    LocalStrategy  = require("passport-local"),
+    seedDB         = require("./seeds"),
+    methodOverride = require("method-override");
 
 // Requiring models
 var User          = require("./models/user"),
@@ -21,6 +22,7 @@ mongoose.connect("mongodb://localhost/yelp_camp");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
+app.use(methodOverride("_method"));
 
 //seedDB(); // Seed the Database
 
